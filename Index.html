@@ -22,29 +22,110 @@
   <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
 
-<body>
-  <header>
-    <div class="container" id="nav-container">
-      <!-- add essa class -->
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <a class="navbar-brand" href="index.html">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" id="home-menu" href="#">Dados pessoais</span></a>
-            <a class="nav-item nav-link" id="about-menu" href="#">Dados funcionais</a>
-            <a class="nav-item nav-link" id="services-menu" href="#">Afastamento</a>
-            <a class="nav-item nav-link" id="team-menu" href="#">Modalidade</a>
-            <a class="nav-item nav-link" id="portfolio-menu" href="#">Instituição</a>
-            <a class="nav-item nav-link" id="contact-menu" href="#">licença sabatica</a>
+< corpo>
+  
+  <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Procad</title>
+  </head>
+
+  <body>
+    
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Docente</h2>
+
+          <div class="form-inline">
+            <input
+            id="campoNome"
+              class="form-control mr-2"
+              type="text"
+              placeholder="Pesquise um nome"
+            />
+
+            <input
+              class="btn btn-primary mr-2"
+              type="submit"
+              value="Pesquisar"
+              onClick="pequisarNome()"
+            />
+            <br>
+          
+          <button a href="form.html" >Novo</button>
+          
           </div>
+
+          <hr />
+
+         <h3>Tabela de professores</h3>
+
+  <table>
+      <tr>
+         <th>Nome</th>
+         <th>Matricula</th>
+         <th>Departamento</th>
+         <th>telefone</th>
+      </tr>
+         
+      <tr>
+         <td>Olivia</td>
+         <td>963926-1</td>
+         <td>Artes</td>
+         <td>(21)99765-7584</td>
+      </tr>
+      
+       <tr>
+         <td>Olivia</td>
+         <td>963926-1</td>
+         <td>Artes</td>
+         <td>(21)99765-7584</td>
+       </tr>
+       
+        <tr>
+          <td>Olivia</td>
+          <td>963926-1</td>
+          <td>Artes</td>
+          <td>(21)99765-7584</td>
+        </tr>
+        
+         <tr>
+           <td>Olivia</td>
+           <td>963926-1</td>
+           <td>Artes</td>
+           <td>(21)99765-7584</td>
+         </tr>
+  </table>
+         
+
+
         </div>
-      </nav>
+      </div>
     </div>
-  </header>
+  </body>
+</html>
 
   <div class="search-box">
     <input class="search-txt" type="text" name="" placeholder="Pesquisar">
